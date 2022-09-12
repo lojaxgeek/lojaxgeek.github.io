@@ -1,0 +1,404 @@
+﻿/* Reset */
+*{margin:0;border:0;padding:0;box-sizing:border-box;font:14px "Open Sans",Arial,Helvetica,Sans-serif}
+
+/* Geral */
+body{background:url(img/bg.jpg) center top/1200px 100% no-repeat;min-width:410px;max-width:100% !important}
+#container{display:table;height:100vh;width:100%}
+#conteudo{display:table;height:100%;width:100%;table-layout:fixed;overflow:hidden}
+#header{position:fixed;width:100%;height:106px;z-index:4;background:linear-gradient(to right,#000058,brown);background:#000058}
+#SearchWidget-1{margin:12px 10px 0 0 !important}
+#categorias{max-height:40px !important}
+#CategoriesV2-1{background:none !important;height:34px !important}
+#Minicart-1{height:100%}
+#mobile-button-show{display:none}
+
+.ecwid-productBrowser{padding:0 20px !important;background:none !important}
+#ProductBrowser-1{min-height:450px !important}
+#productDescription div p img{width:100% !important}
+#rodape{display:table-row;height:300px}
+#ecwid_product_browser_scroller{position:absolute !important;margin-top:0px !important}
+#mobile-button-show,#mobile-button-hide{display:none}
+
+/* Largura mínima */
+#container,#header,.rodape-linha1,.rodape-linha2{min-width:410px}
+
+/* Cabeçalho */
+.cabecalho {height:105px;width:100%;max-width:1200px;margin:0 auto;padding-right:5px;}
+.logotipo{position:absolute;height:100%;width:19%;max-width:228px;background:url(img/logo.png) 20px 10px/auto 75% no-repeat;text-align:center}
+.logo-link{height:88px}
+.logo-img{height:61px;margin:10px 0 5px 0}
+.logo-text1,.logo-text2{font:20px Arial;color:#0067e0;font-weight:bold}
+.logotipo-back{height:105px;width:19%;max-width:228px}
+.faixas{height:105px;width:69%;max-width:817px;padding-left:10px;position:absolute}
+.faixa{height:65px;max-height:65px;width:100%;max-width:817px}
+.busca{height:100%;width:78%;min-width:210px;max-width:600px;overflow:hidden}
+.pedidos{height:100%;width:11%;max-width:95px}
+.conta{height:100%;width:11%;max-width:95px}
+.icones-height1{height:35%;width:100%;text-align:center}
+.icones-height2{height:40%;width:100%;text-align:center;font-size:13px}
+.icones-produtos,.icones-conta{margin:0}
+.icones-link{color:white}
+.icones-pedidos{background:url(img/pedidos2.png) no-repeat center top;background-size:auto 100%}
+.icones-conta{background:url(img/conta2.png) no-repeat center top;background-size:auto 100%}
+.icones-top{margin-top:14px}
+.divisorv{height:65px;margin:20px 0 20px 0;border-left:1px #333333 solid;float:right}
+.compras{max-height:105px;width:12%;max-width:150px;overflow:hidden;float:right;padding:5px 25px 5px 5px}
+.dib{display:inline-block}
+.left{float:left}
+.right{float:right;padding-right:20px}
+.italic{font-style:italic}
+
+/* Breadcrumbs */
+.ec-breadcrumbs{
+background:linear-gradient(to right,#ededed,white) !important;
+color:#333333 !important;
+height:40px !important;
+left:0px !important;
+margin-top:0px !important;
+padding-left:20px !important;
+padding-top:8px !important;
+position:fixed !important;
+top:0 !important;
+width:100% !important;
+z-index:2 !important;
+}
+
+.ec-breadcrumbs a:nth-child(1){padding-left:50% !important;margin-left:-580px !important}
+
+/* Categorias */
+.grid__categories.grid__categories--advanced.grid__categories--small-items.grid__categories--aspect-ratio-1::before {content:'Categorias';font-size:30px;font-weight:600;line-height:1.3;display:block;text-align:center;width:100%;margin-bottom:10px;}
+
+/* Slideshow da Frontpage */
+#slideshow {width:100%;height:430px;margin:0 auto;overflow:hidden;
+-webkit-transform:rotateZ(360deg);
+-moz-transform:rotateZ(360deg);
+-ms-transform:rotateZ(360deg);
+-o-transform:rotateZ(360deg);
+transform:rotateZ(360deg);
+}
+
+.slideshow-container {width:400%;height:100%;font-size:0;transition:1s ease;position:relative}
+#slideshow-div1,#slideshow-div2,#slideshow-div3,#slideshow-div1b{position:relative;width:25%;height:100%;display:inline-block;text-align:center}
+
+#slideshow-div1{background:url(img/banner1.jpg) center bottom/cover no-repeat}
+#slideshow-div2{background:url(img/banner2.jpg) center bottom/cover no-repeat}
+#slideshow-div3{background:url(img/banner3.jpg) center bottom/cover no-repeat}
+#slideshow-div1b{background:url(img/banner1.jpg) center bottom/cover no-repeat}
+
+.slide {animation:AnimaSlides 51s ease infinite}
+.slide:hover{animation-play-state:paused}
+
+@keyframes AnimaSlides {
+0%{transform:translateX(0)}                       /* 0s */
+23.52941176470588%{transform:translateX(0)}       /* 12s  12+5  */ 
+33.33333333333333%{transform:translateX(-25%)}  /* 17s  17+12 */
+56.86274509803922%{transform:translateX(-25%)}  /* 29s  29+5  */
+66.66666666666667%{transform:translateX(-50%)}  /* 34s  34+12 */
+90.19607843137255%{transform:translateX(-50%)}  /* 46s  46+5  */
+99.99999999999999%{transform:translateX(-75%)}  /* 51s  51*/
+}
+
+@keyframes AnimaOferta {
+0%{transform:rotate(-14deg)}
+49.9999%{transform:rotate(-14deg)}
+50%{transform:rotate(0)}
+}
+
+/* Botões do Slideshow */
+#botoes-slides-container{height:20px;width:100%;margin-top:-20px;position:absolute}
+#botoes-slide-internos{height:100%;width:80px;margin:0 auto}
+.botoes-slide-links {height:12px;width:12px;background:white;border-radius:50%;display:inline-block;margin:0 0 0 10px;box-shadow:0 0 5px #525252}
+
+/* Produtos */
+.produtos{
+margin-top:105px;
+-webkit-transform:rotateZ(360deg);
+-moz-transform:rotateZ(360deg);
+-ms-transform:rotateZ(360deg);
+-o-transform:rotateZ(360deg);
+transform:rotateZ(360deg);
+}
+
+/* Rodapé */
+.rodape-z-index{position:absolute;width:100%;z-index:1}
+.rodape-linha1{width:100%;height:150px;background:linear-gradient(to top,brown,#b56262);background:#ff5216;overflow:hidden}
+.rodape-linha2{width:100%;height:150px;background:brown;background:#000058;overflow:hidden}
+.rodape-center{max-width:1200px;margin:0 auto}
+.pagamentos{width:60%;padding-left:15px}
+.certificacoes{width:40%;padding-left:40px}
+.pagamentos,.certificacoes{height:100%;color:white}
+.pagamentos p{display:block;height:32px;padding-top:16px;font-weight:bold}
+.certificacoes p{display:block;height:34px;padding-top:8px;font-weight:bold;margin-bottom:3px}
+.certificacoes span{display:inline-block;height:44px;border-radius:6px}
+.pagamentos-fiat{height:72px;background:url(img/formasdepagamento.png) left bottom/100% auto no-repeat}
+
+.cert1-html5,.cert2-google,.cert3-ssl,.cert4-rating,.cert5-pci{display:inline-block;background-image:url(img/cert-sprite.jpg);background-repeat:no-repeat}
+.cert1-html5{background-position:-303px 1px;height:44px;width:125px}
+.cert2-google{background-position:-190px 1px;height:44px;width:114px}
+.cert3-ssl{background-position:-159px -43px;height:44px;width:152px}
+.cert4-rating{background-position:1px 1px;height:44px;width:190px}
+.cert5-pci{background-position:1px -44px;height:44px;width:159px}
+
+.rodape-bloco{width:33.33%;padding-top:14px;padding-bottom:10px;text-align:center;height:150px;color:white}
+.rodape-bloco p{font-weight:bold;padding-bottom:6px;height:25%}
+.rodape-bloco ul{height:75%}
+.rodape-bloco ul li{list-style-type:none;height:25%}
+.rodape-bloco ul li a{display:block;height:100%;width:100%;cursor:pointer;color:white;text-decoration:none}
+.rodape-bloco ul li a:hover{border:2px white solid}
+
+/* Ecwid */
+.ecwid-PaymentMethodsBlockSvg{display:none !important}
+.ec-cart-accept__icons{background:url(img/pagseguro.png) no-repeat center center !important;width:147px !important;height:34px !important;margin:0 !important}
+.ecwid-paymentPaypal{display:none !important}
+.paypal-button-fundingicons{display:none !important}
+.ec-wrapper{padding-top:50px !important}
+.ec-cart-step__icon{border:none !important}
+.ec-store__confirmation-page{padding-top:30px !important}
+.ec-size .ec-store .form-control__ico-btn svg {padding:6px !important}
+.details-gallery__images-container{min-height:450px !important}
+.label--attention{background:brown !important}
+.label--attention::before{display:none !important}
+.label--attention::after{display:none !important}
+	
+.breadcrumbs__link:hover{color:#1e7ec8 !important}
+.breadcrumbs__link{color:#333333 !important}
+.product-details__product-title{margin-bottom:5px !important}
+button.form-control__button:hover{background-color:#42999c !important;color:white !important}
+
+.details-gallery__images{max-height:550px !important}
+.details-gallery__images--aspect-ratio-auto{margin-bottom:30px !important}
+.details-gallery__images-container{min-height:450px !important;max-height:550px !important}
+.details-gallery__image-wrapper{background:white !important}
+.details-gallery__thumbs{overflow:hidden !important}
+img.details-gallery__picture{position:absolute !important}
+
+.ec-page-body div p{font-size:15px !important}
+.ec-page-buttons,.ec-print-page{display:none !important}
+.ecwid-minicart{max-height:95px !important;width:100% !important;border:0 !important;border-radius:4px !important;z-index:initial !important}
+.ecwid-minicart-caption,.ecwid-minicart-label,.ecwid-minicart-link{width:100% !important}
+.ecwid-minicart-caption{top:56px !important;color:white}
+.ecwid-minicart-clickArea{background:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50'%3E%3Cpath fill='%23439ca0' d='M37 13v27c0 3.31-2.69 6-6 6H9c-3.31 0-6-2.69-6-6V13h34m2-2H1v29c0 4.418 3.582 8 8 8h22c4.418 0 8-3.582 8-8V11z'/%3E%3Ccircle fill='%23439ca0' cx='12' cy='17' r='2'/%3E%3Ccircle fill='%23439ca0' cx='28' cy='17' r='2'/%3E%3Cpath fill='%23439ca0' d='M29 17h-2v-7c0-3.86-3.14-7-7-7s-7 3.14-7 7v7h-2v-7c0-4.962 4.037-9 9-9s9 4.038 9 9v7z'/%3E%3C/svg%3E") no-repeat !important;background-position:center !important;left:0 !important;width:100% !important;top:5px !important}
+.ecwid-minicart-counter{left:0 !important;width:100% !important;color:#439ca0 !important;top:22px !important}
+.ecwid-minicart-link{top:50px !important}
+.ecwid-productBrowser-cart-hint{color:#595959 !important}
+.ecwid-productBrowser-cart-removeItemButton:hover{background-color:#ec0000 !important}
+.ecwid-productBrowser-cart-removeItemButton{background-color:#439ca0 !important}
+.ecwid-productBrowser-cart-totalAmount{font-weight:bold !important;color:#007c31 !important}
+.ecwid-productBrowser-category::before {content:"Produtos em destaque" !important;font-size:20px !important}
+
+.ec-radiogroup__text.ec-text-muted{color:#7b7b7b !important}
+.ec-cart-step__section.ec-cart-step__section--description{border-left:3px solid #1e7ec8 !important;padding-left:20px !important}
+
+.ecwid-productBrowser-price{color:black !important}
+.ecwid-responsive{max-width:1200px !important;margin:0 auto !important}
+.form-control--select-inline,.form-control--select-inline:hover{background:white !important}
+.form-control--select-inline{border-radius:2px !important;border:1px #b1b1b1 solid !important;padding:5px 5px 5px 9px !important}
+.grid-product__button{margin-top:0.85em !important}
+.grid-product__price-amount{font-size:17px !important;font-weight:bold !important;color:green !important;width:117px !important}
+.grid-product__price::after{white-space:pre;content:"À vista no boleto \A ou parcelado \A nos cartões" !important;box-sizing:border-box !important;font-size:14px !important;width:117px !important;border-top:1px grey solid !important}
+.horizontal-menu-container{font-weight:bold !important;height:100% !important;width:100% !important;border:none !important;border-radius:0 !important}
+.product-details__description{width:100% !important}
+.product-details__product-attributes{display:none !important}
+input.ecwid-search-widget__input{height:3em !important;width:100% !important;min-width:168px !important;border-radius:4px !important}
+li.ec-page-links__item--selected{text-decoration:underline !important}
+
+nav.horizontal-menu{width:100% !important;height:100% !important;border:none !important;padding:0px !important;background:#ff5216 !important;border-radius:4px !important;
+/*margin-left:-12px !important*/
+}
+
+nav.horizontal-menu ul{height:100% !important}
+nav.horizontal-menu ul li{height:100% !important}
+nav.horizontal-menu ul li a{height:100% !important;background:none !important;border-radius:0 !important}
+nav.horizontal-menu ul li a span{text-transform:uppercase !important;font-weight:bold !important;color:white !important;margin-top:-2px !important}
+nav.horizontal-menu ul li a span:hover{color:#000058 !important}
+/*nav.horizontal-menu ul li a span:hover{text-decoration:underline !important}*/
+
+.horizontal-menu-subParent{padding:0 !important;padding-top:0 !important;margin:0 !important;border:0 !important;border-radius:0 !important}
+.horizontal-menu-subParent *{max-height:36px !important}
+.horizontal-menu-subParent ul {padding:0 !important;padding-top:0 !important;margin:0 !important;border:0 !important;border-radius:0 !important}
+.horizontal-menu-subParent li {min-height:36px !important;padding:0 !important;padding-top:0 !important;margin:0 !important;border:0 !important;border-radius:0 !important;background:white !important;text-align:center !important;}
+.horizontal-menu-subParent li.horizontal-menu-item a{padding:0px !important}
+.horizontal-menu-subParent li.horizontal-menu-item a svg{margin:12px 0 0 -12px !important;}
+.horizontal-menu-subParent li.horizontal-menu-item a span{color:#575757 !important;min-height:100%;min-width:100%;padding:10px 15px !important;margin-top:0 !important}
+.horizontal-menu-subParent li.horizontal-menu-item--hover:hover{background:#000058 !important;color:white !important}
+.horizontal-menu-subParent li.horizontal-menu-item--hover a span:hover{background:#000058 !important;color:white !important;margin-top:0 !important}
+
+.horizontal-menu--mobile{width:66% !important}
+.ecwid-search-widget{height:3.5em !important;width:100% !important;min-width:168px !important;max-width:none !important}
+span.details-product-price__value{font-size:24px !important;font-weight:bold !important;color:#007c31 !important}
+span.gwt-RadioButton label{font-weight:bold !important;text-transform:uppercase !important}
+span.svg-icon svg{position:absolute !important;top:0 !important;left:0 !important}
+span.svg-icon--stroke-only {margin:0 !important}
+table.ecwid-Checkout-blockTitle tbody tr td div .gwt-HTML{margin:0 0 5px 1px !important}
+td.ecwid-Invoice-footer-placeOrder-text {text-align:left !important}
+ul.ec-page-links__wrapper li:first-child{display:none !important}
+
+/* Tablet */
+@media (max-width:1200px) {
+body{background:white}
+#header{height:70px;border:none}
+#SearchWidget-1{margin:10px !important}
+#CategoriesV2-1{padding:0 !important}
+#rodape{height:460px}
+.horizontal-desktop{display:none}
+.produtos{margin-top:70px}
+
+/* Cabeçalho Tablet */
+.cabecalho{height:70px;max-width:initial;margin:initial;padding:0}
+.logotipo{left:92px;height:70px;width:84px;max-width:initial;background:url(img/logo.png) center center/100% auto no-repeat;}
+.logo-link{height:100%}
+.logo-img{height:46px}
+.logo-text1{display:none}
+.logo-text2{display:none}
+.logotipo-back{height:70px;width:180px;max-width:initial}
+.faixas{height:70px;left:181px;right:105px;width:initial;max-width:initial;padding:initial}
+.faixa{height:70px;max-height:initial;width:100%;max-width:initial}
+.categorias{position:fixed;top:0;left:0;height:0px;width:90px;overflow:visible}
+.busca{position:absolute;left:0;right:140px;width:initial;min-width:initial;max-width:initial}
+.pedidos{width:75px;max-width:none}
+.conta{width:75px;max-width:none}
+.icones-height1{height:30px}
+.icones-height2{height:30px;font-weight:bold}
+.icones-top{margin-top:10px}
+.divisorv{display:none}
+.compras{height:70px;width:100%;min-width:75px;max-width:105px;padding:0}
+.right{padding-right:0}
+
+.logo{height:54px;margin:8px 0 0 17px;}
+#mobile-button-show,#mobile-button-hide{display:block;height:70px;width:90px;border:none;cursor:pointer}
+#mobile-button-hide{display:none}
+#categorias:target .horizontal-desktop{display:block}
+#categorias:target #mobile-button-show{display:none}
+#categorias:target #mobile-button-hide{display:block}
+#hide:target .horizontal-desktop{display:none}
+#cartoes-credito{border-left:none !important;padding-left:0 !important}
+
+.horizontal-menu-button-text{display:none !important}
+.ecwid-minicart{height:70px !important;border-radius:0 !important}
+.ecwid-minicart-caption{top:44px !important;font-size:13px !important}
+.ecwid-minicart-clickArea{background-size:auto 40px !important;top:4px !important;height:40px !important}
+.ecwid-minicart-counter{top:15px !important;font-size:17px !important;color:#439ca0 !important}
+.ecwid-search-widget{height:3.5em !important;width:100% !important;min-width:168px !important;max-width:none !important}
+.horizontal-menu-button{position:fixed !important;top:0 !important;height:70px !important;width:90px !important}
+.horizontal-menu-button svg{color:white !important;height:60px !important;width:55px !important;margin:4px 10px 5px 15px !important}
+.horizontal-menu-container{font-weight:bold !important;height:100% !important;width:100% !important;border:none !important;border-radius:0 !important;padding:0 !important}
+input.ecwid-search-widget__input{height:3.5em !important;width:100% !important;min-width:168px !important;}
+nav.horizontal-menu{width:100vw !important;border:none !important;border-radius:0 !important;padding:0 !important}
+nav.horizontal-menu ul li{width:80% !important;margin-right:20% !important;height:auto !important}
+nav.horizontal-menu--desktop ul{background:rgba(0,0,0,0.6) url(img/bg2.png) left top/80% 100% no-repeat !important;height:100vh !important;width:100% !important;padding-top:15px !important}
+
+/* Slideshow Tablet */
+#slideshow{height:410px}
+#slideshow-div1, #slideshow-div2, #slideshow-div3, #slideshow-div1b{height:410px}
+
+/* Breadcrumbs Tablet */
+.ec-breadcrumbs{
+position:fixed !important;
+left:0 !important;
+right:0 !important;
+margin-left:initial !important;
+width:initial !important;
+}
+.ec-breadcrumbs a:nth-child(1){padding-left:0px !important;margin-left:0px !important}
+
+/* Rodapé Tablet */
+.pagamentos{width:100%;padding:0;text-align:center}
+.certificacoes{width:100%;padding:0;text-align:center;padding-top:8px}
+
+.pagamentos-fiat{background-position:center bottom;background-size:auto 69px;margin:0 auto}
+.pagamentos-crypto{display:block;height:40px;padding-top:7px}
+.pagamentos p:last-child{padding-top:15px}
+
+.rodape-linha1{height:310px;padding-top:10px}
+.rodape-bloco:nth-child(1){width:33.33%;text-align:right;padding-right:16px}
+.rodape-bloco:nth-child(2){width:33.33%}
+.rodape-bloco:nth-child(3){width:33.33%;text-align:left;padding-left:16px}
+}
+
+/* Ajuste da imagem das Formas de Pagamento */
+@media (max-width:890px) {
+.pagamentos-fiat{width:685px;background-position:left bottom}
+}
+
+/* Phablet */
+@media (max-width:694px) {
+#header{height:50px}
+#rodape{height:800px}
+.cabecalho{height:50px}
+.logotipo{height:50px;width:70px;left:64px}
+.logo-img{height:36px;margin:7px 0px}
+.logotipo-back{height:50px}
+.faixas{height:50px;left:132px;right:80px}
+.faixa{height:50px}
+.busca{height:100%;left:0;right:70px}
+.pedidos{display:none}
+.conta{height:100%;width:75px}
+.icones-conta{background-size:auto 97%}
+.icones-top{margin-top:3px}
+.icones-height1{height:29px}
+.icones-height2{font-size:12.5px}
+.compras{height:50px;max-width:80px}
+
+.ec-wrapper {padding-top:40px !important}
+.ecwid-productBrowser {padding:0 15px !important}
+
+.details-gallery__thumb--active{width:100% !important;width:100% !important;}
+a.details-gallery__thumb-img{margin:0 auto !important}
+
+/* Break icons Phablet */
+.break-desktop-tablet{display:initial !important}
+.break-phablet{display:block !important}
+
+/* Slideshow Phablet */
+#slideshow{height:235px}
+#slideshow-div1, #slideshow-div2, #slideshow-div3, #slideshow-div1b{height:235px}
+
+/* Breadcrumbs Phablet */
+.gray-ribbon{z-index:initial !important;margin-top:650px !important;}
+
+/* Produtos Phablet */
+.produtos{margin-top:50px}
+.logotipo{background:url(img/logo.png) center center/100% auto no-repeat}
+.certificacoes{padding-top:15px}
+.rodape-linha1{height:350px}
+.rodape-linha2{height:450px}
+.rodape-bloco{text-align:center !important}
+.rodape-bloco:nth-child(1){width:100%;padding-right:0}
+.rodape-bloco:nth-child(2){width:100%}
+.rodape-bloco:nth-child(3){width:100%;padding-left:0}
+
+#CategoriesV2-1{background:none !important}
+#Minicart-1{height:50px !important}
+#SearchWidget-1{margin:6px !important}
+#mobile-button-show,#mobile-button-hide{height:50px}
+.logo{height:43px;margin:6px 0 0 13px;}
+
+.ecwid-minicart{height:50px !important}
+.ecwid-minicart-clickArea {background-size:auto 31px !important;top:-2px !important;height:40px !important}
+.ecwid-minicart-caption {top:32px !important;font-size:12.5px !important;}
+.ecwid-minicart-counter {top:8px !important;font-size:13px !important;left:0 !important;width:100% !important}
+.ecwid-search-widget{height:2.74em !important;width:100% !important;min-width:initial !important;max-width:initial !important}
+input.ecwid-search-widget__input{height:2.74em !important;width:100% !important;min-width:initial !important}
+span.ecwid-search-widget__opener{height:50px !important;line-height:100% !important;width:100% !important}
+.horizontal-menu-button {height:50px !important;width:64px !important}
+.horizontal-menu-button svg {color:white !important;height:42px !important;width:44px !important;margin:6px 12px !important}
+.pagamentos-fiat{width:504px;background-position:left bottom;background-size:auto 58px}
+}
+
+/* Mobile */
+@media (max-width:560px) {
+.busca{height:100%}
+.ec-wrapper {padding-top:25px !important}
+}
+
+/* Ajuste da imagem das Formas de Pagamento */
+@media (max-width:540px) {
+.pagamentos-fiat{width:400px;background-size:auto 46px}
+}
+
+/* Ajuste da barra de pesquisa */
+@media (max-width:475px) {
+.busca{width:100%}
+.conta{display:none}
+.details-gallery__images-container{min-height:auto !important}
+}
