@@ -13,7 +13,7 @@ body{background:url(img/bg.jpg) center top/1200px 100% no-repeat;min-width:410px
 #mobile-button-show{display:none}
 
 .ecwid-productBrowser{padding:0 20px !important;background:none !important}
-#ProductBrowser-1{min-height:450px !important}
+#ProductBrowser-1{min-height:350px !important}
 #productDescription div p img{width:100% !important}
 #rodape{display:table-row;height:300px}
 #ecwid_product_browser_scroller{position:absolute !important;margin-top:0px !important}
@@ -121,8 +121,8 @@ transform:rotateZ(360deg);
 
 /* Rodapé */
 .rodape-z-index{position:absolute;width:100%;z-index:1}
-.rodape-linha1{width:100%;height:150px;background:linear-gradient(to top,brown,#b56262);background:#ff5216;overflow:hidden}
-.rodape-linha2{width:100%;height:150px;background:brown;background:#000058;overflow:hidden}
+.rodape-linha1{width:100%;height:150px;background:linear-gradient(to top,brown,#b56262);background:linear-gradient(to left,#000058,brown);background:linear-gradient(to right,#000058,brown);background:#ff5216;overflow:hidden}
+.rodape-linha2{width:100%;height:150px;background:brown;background:linear-gradient(to right,#000058,brown);background:#000058;overflow:hidden}
 .rodape-center{max-width:1200px;margin:0 auto}
 .pagamentos{width:60%;padding-left:15px}
 .certificacoes{width:40%;padding-left:40px}
@@ -193,9 +193,10 @@ img.details-gallery__picture{position:absolute !important}
 .ecwid-responsive{max-width:1200px !important;margin:0 auto !important}
 .form-control--select-inline,.form-control--select-inline:hover{background:white !important}
 .form-control--select-inline{border-radius:2px !important;border:1px #b1b1b1 solid !important;padding:5px 5px 5px 9px !important}
+.grid-product__title-inner{max-height: 58px !important}
 .grid-product__button{margin-top:0.85em !important}
 .grid-product__price-amount{font-size:17px !important;font-weight:bold !important;color:green !important;width:117px !important}
-.grid-product__price::after{white-space:pre;content:"À vista no boleto \A ou parcelado \A nos cartões" !important;box-sizing:border-box !important;font-size:14px !important;width:117px !important;border-top:1px grey solid !important}
+.grid-product__price::after{white-space:pre;content:"À vista: boleto e pix \A ou parcelado \A nos cartões" !important;box-sizing:border-box !important;font-size:14px !important;width:117px !important;border-top:1px grey solid !important}
 .horizontal-menu-container{font-weight:bold !important;height:100% !important;width:100% !important;border:none !important;border-radius:0 !important}
 .product-details__description{width:100% !important}
 .product-details__product-attributes{display:none !important}
