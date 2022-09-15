@@ -14,7 +14,7 @@ body{background:url(img/bg.jpg) center top/1200px 100% no-repeat;min-width:410px
 
 .ecwid-productBrowser{padding:0 20px !important;background:none !important}
 #ProductBrowser-1{min-height:350px !important}
-#productDescription div p img{width:100% !important}
+/*#productDescription div p img{width:100% !important}*/
 #rodape{display:table-row;height:300px}
 #ecwid_product_browser_scroller{position:absolute !important;margin-top:0px !important}
 #mobile-button-show,#mobile-button-hide{display:none}
