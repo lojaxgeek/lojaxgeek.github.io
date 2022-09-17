@@ -80,10 +80,10 @@ transform:rotateZ(360deg);
 .slideshow-container {width:400%;height:100%;font-size:0;transition:1s ease;position:relative}
 #slideshow-div1,#slideshow-div2,#slideshow-div3,#slideshow-div1b{position:relative;width:25%;height:100%;display:inline-block;text-align:center}
 
-#slideshow-div1{background:url(img/banner1.jpg) center bottom/cover no-repeat}
-#slideshow-div2{background:url(img/banner2.jpg) center bottom/cover no-repeat}
-#slideshow-div3{background:url(img/banner3.jpg) center bottom/cover no-repeat}
-#slideshow-div1b{background:url(img/banner1.jpg) center bottom/cover no-repeat}
+#slideshow-div1{background:url(img/banner1.jpg) center center/cover no-repeat}
+#slideshow-div2{background:url(img/banner2.jpg) center center/cover no-repeat}
+#slideshow-div3{background:url(img/banner3.jpg) center center/cover no-repeat}
+#slideshow-div1b{background:url(img/banner1.jpg) center center/cover no-repeat}
 
 .slide {animation:AnimaSlides 51s ease infinite}
 .slide:hover{animation-play-state:paused}
