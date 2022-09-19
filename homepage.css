@@ -85,17 +85,17 @@ transform:rotateZ(360deg);
 #slideshow-div3{background:url(img/banner3.jpg) center center/cover no-repeat}
 #slideshow-div1b{background:url(img/banner1.jpg) center center/cover no-repeat}
 
-.slide {animation:AnimaSlides 51s ease infinite}
+.slide {animation:AnimaSlides 39s ease infinite}
 .slide:hover{animation-play-state:paused}
 
 @keyframes AnimaSlides {
-0%{transform:translateX(0)}                       /* 0s */
-23.52941176470588%{transform:translateX(0)}       /* 12s  12+5  */ 
-33.33333333333333%{transform:translateX(-25%)}  /* 17s  17+12 */
-56.86274509803922%{transform:translateX(-25%)}  /* 29s  29+5  */
-66.66666666666667%{transform:translateX(-50%)}  /* 34s  34+12 */
-90.19607843137255%{transform:translateX(-50%)}  /* 46s  46+5  */
-99.99999999999999%{transform:translateX(-75%)}  /* 51s  51*/
+0%{transform:translateX(0)}                     /* 00s        */
+25.64102564102564%{transform:translateX(0)}     /* 10s  10+3  */ 
+33.33333333333333%{transform:translateX(-25%)}  /* 13s  13+10 */
+58.97435897435897%{transform:translateX(-25%)}  /* 23s  +3    */
+66.66666666666667%{transform:translateX(-50%)}  /* 26s  +10   */
+92.30769230769231%{transform:translateX(-50%)}  /* 36s  +3    */
+99.99999999999999%{transform:translateX(-75%)}  /* 39s        */
 }
 
 @keyframes AnimaOferta {
