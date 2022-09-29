@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script>
 	ecwidMessages = {
 	"AddToBagWidget.product_added":"O produto foi adicionado a sacola de compras",
@@ -111,24 +112,50 @@
 		--></div><!--
 		--></div><!--
 		--><div id="ecwid_product_browser_scroller"></div><!--
-		--><div class="produtos"><!--
-		--><div id="slideshow"><!--
-			 --><div class="slideshow-container slide">
-					<a href="#!/c/0/offset=0"><div id="slideshow-div1"></div></a>
-					<a href="#!/Harry-Potter/c/138728811"><div id="slideshow-div2"></div></a>
-					<a href="#!/Star-Wars/c/138728801"><div id="slideshow-div3"></div></a>
-					<a href="#!/c/0/offset=0"><div id="slideshow-div1b"></div></a>
-				</div>
-			</div>
-			<div id="botoes-slides-container">
-				<div id="botoes-slide-internos">
-					<a href="#slideshow-div1" onclick="GoToTop()"><div class="botoes-slide-links"></div></a>
-					<a href="#slideshow-div2" onclick="GoToTop()"><div class="botoes-slide-links"></div></a>
-					<a href="#slideshow-div3" onclick="GoToTop()"><div class="botoes-slide-links"></div></a>
-				</div>
-			</div>
-				<script>xProductBrowser("categoriesPerRow=5","views=grid(6,2) list(10) table(20)","categoryView=grid","searchView=list");</script>
-			</div>
+ --><div class="produtos"><!--
+ --><div id="frontpage"><!--
+ --><div id="slideshow">
+			<input id="botao-slide1" name="botao-slide" type="radio" checked>
+			<input id="botao-slide2" name="botao-slide" type="radio">
+			<input id="botao-slide3" name="botao-slide" type="radio">
+		<div id="slides-container1"><!--
+		--><a href="#!/c/0/offset=0"><div></div></a><!--
+		--><a href="#!/Harry-Potter/c/139296172"><div></div></a><!--
+		--><a href="#!/Star-Wars/c/139296164"><div></div></a><!--
+		--><a href="#!/c/0/offset=0"><div></div></a><!--
+	--></div>
+		<div id="slides-container2"><!--
+		--><a href="#!/Harry-Potter/c/139296172"><div></div></a><!--
+		--><a href="#!/Star-Wars/c/139296164"><div></div></a><!--
+		--><a href="#!/c/0/offset=0"><div></div></a><!--
+		--><a href="#!/Harry-Potter/c/139296172"><div></div></a><!--
+	--></div>
+	<div id="slides-container3"><!--
+		--><a href="#!/Star-Wars/c/139296164"><div></div></a><!--
+		--><a href="#!/c/0/offset=0"><div></div></a><!--
+		--><a href="#!/Harry-Potter/c/139296172"><div></div></a><!--
+		--><a href="#!/Star-Wars/c/139296164"><div></div></a><!--
+ --></div>
+	</div>
+
+	<div id="descricoes-container">
+		<div id="descricoes-1200px"><!--
+		--><div class="descricoes"><div><i class="fa fa-gift"></i>
+			<p>Aqui você encontra ótima qualidade e variedade de produtos do universo geek!</p></div>
+		   </div><!--
+		--><div class="descricoes"><div><i class="fa fa-credit-card"></i>
+			<p>Você escolhe a melhor forma de pagamento: Boleto, PIX ou Cartão. À vista ou parcelado.</p></div>
+		   </div><!--
+		--><div class="descricoes"><div><i class="fa fa-truck fa-flip-horizontal"></i>
+			<p>Entrega rápida e segura do seu pedido em todo o território nacional!</p></div>
+		  </div><!--
+	 --></div>
+	</div>
+	
+	</div> <!-- Fim do bloco exclusivo "Frontpage" -->
+
+		<script>xProductBrowser("categoriesPerRow=5","views=grid(6,2) list(10) table(20)","categoryView=grid","searchView=list");</script>
+	</div>
 		</div>
 		<div id="rodape">
 		<div class="rodape-z-index">
@@ -201,20 +228,20 @@ function GoToTop() {
 Ecwid.OnPageLoaded.add(function (page) {
     console.log("Página atual: " + page.type);
 	if (window.location.href.indexOf("index.html") != -1) {
-		console.log("URL tem 'index.html': exibe slideshow");
-        document.getElementById("slideshow").style.display="block"
+		console.log("URL tem 'index.html': exibe bloco exclusivo da frontpage");
+        document.getElementById("frontpage").style.display="block"
     }
 	if (window.location.href.indexOf("#") != -1) {
-		console.log("URL tem '#': esconde slideshow");
-        document.getElementById("slideshow").style.display="none"
+		console.log("URL tem '#': esconde bloco exclusivo da frontpage");
+        document.getElementById("frontpage").style.display="none"
     }
 	if (window.location.href.indexOf("#!/c/") != -1) {
-		console.log("URL tem '#!/c/': exibe slideshow");
-        document.getElementById("slideshow").style.display="block"
+		console.log("URL tem '#!/c/': exibe bloco exclusivo da frontpage");
+        document.getElementById("frontpage").style.display="block"
     }
 	if (window.location.href.indexOf("#slideshow") != -1) {
-		console.log("URL tem '#slideshow': exibe slideshow");
-        document.getElementById("slideshow").style.display="block"
+		console.log("URL tem '#slideshow': exibe bloco exclusivo da frontpage");
+        document.getElementById("frontpage").style.display="block"
     }
 	if (localStorage.getItem("ClickedToPay") == 'y') {
 	Ecwid.Cart.clear();

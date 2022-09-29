@@ -68,54 +68,145 @@ z-index:2 !important;
 .grid__categories.grid__categories--advanced.grid__categories--small-items.grid__categories--aspect-ratio-1::before {content:'Categorias';font-size:30px;font-weight:600;line-height:1.3;display:block;text-align:center;width:100%;margin-bottom:10px;}
 
 /* Slideshow da Frontpage */
-#slideshow {width:100%;height:450px;margin:0 auto;overflow:hidden;
--webkit-transform:rotateZ(360deg);
--moz-transform:rotateZ(360deg);
--ms-transform:rotateZ(360deg);
--o-transform:rotateZ(360deg);
-transform:rotateZ(360deg);
+#slideshow {
+	height:450px; /* altura responsiva com @media */
+	width:100%;
+	position:relative;
+	overflow:hidden;
 }
 
-.slideshow-container {width:400%;height:100%;font-size:0;transition:1s ease;position:relative}
-#slideshow-div1,#slideshow-div2,#slideshow-div3,#slideshow-div1b{position:relative;width:25%;height:100%;display:inline-block;text-align:center}
+/* #slides-container123 */
+#slideshow > div{
+	position:absolute;
+	top:0;
+	display:none;
+}
 
-#slideshow-div1{background:url(img/banner1.jpg) center center/cover no-repeat}
-#slideshow-div2{background:url(img/banner2.jpg) center center/cover no-repeat}
-#slideshow-div3{background:url(img/banner3.jpg) center center/cover no-repeat}
-#slideshow-div1b{background:url(img/banner1.jpg) center center/cover no-repeat}
+#slideshow input{
+	position:relative;
+	display:inline-block;
+	margin-top:435px;
+	margin-right:10px;
+	z-index:1;
+	appearance:none;
+	border:3px solid #fff;
+	border-radius:50%;
+	background:#fff;
+	box-shadow:0 0 0 1px #505050;
+	transform:scale(1.5);
+	cursor:pointer;
+}
 
-.slide {animation:AnimaSlides 39s ease infinite}
-.slide:hover{animation-play-state:paused}
+#slideshow input:first-of-type{
+	margin-left:48%;
+}
 
+#slides-container1,#slides-container2,#slides-container3{
+	height:100%;
+	width:400%;
+	overflow:hidden;
+}
+
+#slides-container1 div,#slides-container2 div,#slides-container3 div{
+	display:inline-block;
+	height:100%;
+	width:25%;
+	text-align:center;
+	font-size:5rem;
+	line-height:450px;
+	color:black;
+}
+
+#slides-container1 a:nth-of-type(1) div{background:url(img/banner1.jpg) center center/cover no-repeat}
+#slides-container1 a:nth-of-type(2) div{background:url(img/banner2.jpg) center center/cover no-repeat}
+#slides-container1 a:nth-of-type(3) div{background:url(img/banner3.jpg) center center/cover no-repeat}
+#slides-container1 a:nth-of-type(4) div{background:url(img/banner1.jpg) center center/cover no-repeat}
+
+#slides-container2 a:nth-of-type(1) div{background:url(img/banner2.jpg) center center/cover no-repeat}
+#slides-container2 a:nth-of-type(2) div{background:url(img/banner3.jpg) center center/cover no-repeat}
+#slides-container2 a:nth-of-type(3) div{background:url(img/banner1.jpg) center center/cover no-repeat}
+#slides-container2 a:nth-of-type(4) div{background:url(img/banner2.jpg) center center/cover no-repeat}
+
+#slides-container3 a:nth-of-type(1) div{background:url(img/banner3.jpg) center center/cover no-repeat}
+#slides-container3 a:nth-of-type(2) div{background:url(img/banner1.jpg) center center/cover no-repeat}
+#slides-container3 a:nth-of-type(3) div{background:url(img/banner2.jpg) center center/cover no-repeat}
+#slides-container3 a:nth-of-type(4) div{background:url(img/banner3.jpg) center center/cover no-repeat}
+
+/* Animação do Slideshow */
 @keyframes AnimaSlides {
 0%{transform:translateX(0)}                     /* 00s        */
-25.64102564102564%{transform:translateX(0)}     /* 10s  10+3  */ 
-33.33333333333333%{transform:translateX(-25%)}  /* 13s  13+10 */
-58.97435897435897%{transform:translateX(-25%)}  /* 23s  +3    */
-66.66666666666667%{transform:translateX(-50%)}  /* 26s  +10   */
-92.30769230769231%{transform:translateX(-50%)}  /* 36s  +3    */
-99.99999999999999%{transform:translateX(-75%)}  /* 39s        */
+25.64102564102564%{transform:translateX(0)}     /* 10s  10+2  */ 
+33.33333333333333%{transform:translateX(-25%)}  /* 12s  12+10 */
+58.97435897435897%{transform:translateX(-25%)}  /* 22s  +2    */
+66.66666666666667%{transform:translateX(-50%)}  /* 24s  +10   */
+92.30769230769231%{transform:translateX(-50%)}  /* 34s  +2    */
+99.99999999999999%{transform:translateX(-75%)}  /* 36s        */
 }
 
-@keyframes AnimaOferta {
-0%{transform:rotate(-14deg)}
-49.9999%{transform:rotate(-14deg)}
-50%{transform:rotate(0)}
+#botao-slide1:checked ~ #slides-container1 {
+	display:block;
+	animation:AnimaSlides 36s ease infinite;
 }
 
-/* Botões do Slideshow */
-#botoes-slides-container{height:20px;width:100%;margin-top:-20px;position:absolute}
-#botoes-slide-internos{height:100%;width:80px;margin:0 auto}
-.botoes-slide-links {height:12px;width:12px;background:white;border-radius:50%;display:inline-block;margin:0 0 0 10px;box-shadow:0 0 5px #525252}
+#botao-slide2:checked ~ #slides-container2 {
+	display:block;
+	animation:AnimaSlides 36s ease infinite;
+}
+
+#botao-slide3:checked ~ #slides-container3 {
+	display:block;
+	animation:AnimaSlides 36s ease infinite;
+}
+
+/* Descrições e Ícones da Frontpage */
+#descricoes-container{
+	height:100px;
+	width:100%;
+}
+
+#descricoes-1200px{
+	height:100%;
+	max-width:1200px;
+	margin:0 auto;
+}
+
+#descricoes-1200px > div{
+	height:100%;
+	width:33%;
+	display:inline-block;
+}
+
+#descricoes-1200px > div div{
+	height:100%;
+	width:100%;
+	display:table;
+}
+
+#descricoes-1200px > div div p{
+	height:100%;
+	width:82%;
+	text-align:center;
+	display:table-cell;
+    vertical-align:middle;
+}
+
+#descricoes-1200px > div div i{
+	height:100%;
+	width:16%;
+	color:#000058;
+	font-size:2.75em;
+	text-align:center;
+	display:table-cell;
+    vertical-align:middle;
+}
+
+#descricoes-1200px > div div i:hover{
+	color:#ff5216;
+}
 
 /* Produtos */
 .produtos{
 margin-top:105px;
--webkit-transform:rotateZ(360deg);
--moz-transform:rotateZ(360deg);
--ms-transform:rotateZ(360deg);
--o-transform:rotateZ(360deg);
-transform:rotateZ(360deg);
 }
 
 /* Rodapé */
@@ -284,11 +375,11 @@ body{background:white}
 input.ecwid-search-widget__input{height:3.5em !important;width:100% !important;min-width:168px !important;}
 nav.horizontal-menu{width:100vw !important;border:none !important;border-radius:0 !important;padding:0 !important}
 nav.horizontal-menu ul li{width:100% !important;margin-right:20% !important;height:auto !important}
-nav.horizontal-menu--desktop ul{background:rgba(0,0,0,0.6) url(img/bg2.png) left top/80% 100% no-repeat !important;height:100vh !important;width:100% !important;padding-top:15px !important}
+nav.horizontal-menu--desktop ul{background:rgba(0,0,0,0.6) url(img/bg2.png) left top/100% 100% no-repeat !important;height:100vh !important;width:100% !important;padding-top:15px !important}
 
 /* Slideshow Tablet */
 #slideshow{height:410px}
-#slideshow-div1, #slideshow-div2, #slideshow-div3, #slideshow-div1b{height:410px}
+#slideshow input{margin-top:395px}
 
 /* Breadcrumbs Tablet */
 .ec-breadcrumbs{
@@ -319,6 +410,28 @@ width:initial !important;
 .pagamentos-fiat{width:685px;background-position:left bottom}
 }
 
+/* Ajuste dos blocos de descrição */
+@media (max-width:750px) {
+#descricoes-container {
+    height:auto;
+}
+
+#descricoes-1200px > div{
+	height:60px;
+	width:100%;
+	display:block;
+}
+
+#descricoes-1200px > div div p{
+	text-align:left;
+}
+
+#descricoes-1200px > div div i::before {
+    font-size:smaller;
+}
+
+}
+
 /* Phablet */
 @media (max-width:694px) {
 #header{height:70px}
@@ -347,7 +460,8 @@ a.details-gallery__thumb-img{margin:0 auto !important}
 
 /* Slideshow Phablet */
 #slideshow{height:235px}
-#slideshow-div1, #slideshow-div2, #slideshow-div3, #slideshow-div1b{height:235px}
+#slideshow input{margin-top:220px}
+#descricoes-1200px div p {font-size: 0.9em}
 
 /* Produtos Phablet */
 .logotipo{background:url(img/logo2.png) center center/80% auto no-repeat}
