@@ -136,7 +136,7 @@
 		--><a href="#!/Harry-Potter/c/139296172"><div></div></a><!--
 		--><a href="#!/Star-Wars/c/139296164"><div></div></a><!--
  --></div>
-	</div>
+	</div> <!-- Fim do "slideshow" -->
 
 	<div id="descricoes-container">
 		<div id="descricoes-1200px"><!--
@@ -150,13 +150,23 @@
 			<p>Entrega rápida e segura do seu pedido em todo o território nacional!</p></div>
 		  </div><!--
 	 --></div>
+	</div> <!-- Fim do "descricoes-container" -->
+	<!--
+	<div id="banner-front1">
+	<a href="#!/Funko-Pop/c/139296158"><img src="img/banner-front1.jpg" /></a>
 	</div>
-	
+	-->
 	</div> <!-- Fim do bloco exclusivo "Frontpage" -->
 
-		<script>xProductBrowser("categoriesPerRow=5","views=grid(6,2) list(10) table(20)","categoryView=grid","searchView=list");</script>
+	<script>xProductBrowser("categoriesPerRow=6","views=grid(6,3) list(10) table(20)","categoryView=grid","searchView=list");</script>
+	</div> <!-- Fim "produtos" -->
+
+	<div id="banner-front2">
+	<a href="#!/Groot-Baby-Groot/c/139296163"><img src="img/banner-front2.jpg" /></a>
+	<a href="#!/Grogu-Baby-Yoda/c/139296165"><img src="img/banner-front3.jpg" /></a>
 	</div>
-		</div>
+
+	</div> <!-- Fim "conteudo" -->
 		<div id="rodape">
 		<div class="rodape-z-index">
 		<div class="rodape-linha1"><div class="rodape-center">
@@ -217,13 +227,6 @@
 	</div> <!-- Fim "rodape" -->
 	</div> <!-- Fim "container" -->
 <script>
-
-function GoToTop() {
-	setTimeout(function(){
-		document.body.scrollTop = 0; // Safari
-		document.documentElement.scrollTop = 0; // Chrome, Firefox, IE e Opera
-	}, 0); // Timeout em milisegundos
-}
 
 Ecwid.OnPageLoaded.add(function (page) {
     console.log("Página atual: " + page.type);
