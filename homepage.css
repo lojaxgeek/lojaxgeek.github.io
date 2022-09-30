@@ -2,7 +2,7 @@
 *{margin:0;border:0;padding:0;box-sizing:border-box;font:14px "Open Sans",Arial,Helvetica,Sans-serif}
 
 /* Geral */
-body{background:url(img/bg.jpg) center top/1200px 100% no-repeat;min-width:410px;max-width:100% !important}
+body{background:url(img/bg.png) center top/1200px 100% no-repeat;min-width:410px;max-width:100% !important}
 #container{display:table;height:100vh;width:100%}
 #conteudo{display:table;height:100%;width:100%;table-layout:fixed;overflow:hidden}
 #header{position:fixed;width:100%;height:105px;z-index:4;background:linear-gradient(to right,#000058,brown);background:#000058}
@@ -248,6 +248,10 @@ z-index:2 !important;
 	margin-bottom:10px;
 }
 
+div.ec-page-title__featured-products{
+	cursor:pointer;
+}
+
 div.ec-page-title__featured-products::before{
 	display:block;
 	height:auto;
@@ -386,6 +390,18 @@ span.svg-icon--stroke-only {margin:0 !important}
 table.ecwid-Checkout-blockTitle tbody tr td div .gwt-HTML{margin:0 0 5px 1px !important}
 td.ecwid-Invoice-footer-placeOrder-text {text-align:left !important}
 ul.ec-page-links__wrapper li:first-child{display:none !important}
+
+div.ec-cart-step--delivery div.ec-cart-step__wrap div.ec-cart-step__section p{display:none !important}
+div.ec-cart-step--delivery div.ec-cart-step__wrap div.ec-cart-step__section:first-of-type::before{
+	content:"Selecione abaixo o método de envio, para estimar o prazo de entrega após a postagem. A postagem dos produtos é feita em até 24h após a confirmação do pagamento." !important;
+	display:block !important;
+	width:100% !important;
+	font-weight:normal !important;
+    font-size:16px !important;
+    margin-bottom:10px !important;
+}
+
+div.ec-confirmation{margin-bottom:50px}
 
 /* Tablet */
 @media (max-width:1200px) {

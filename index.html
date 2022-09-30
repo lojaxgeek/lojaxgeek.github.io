@@ -231,20 +231,24 @@
 Ecwid.OnPageLoaded.add(function (page) {
     console.log("Página atual: " + page.type);
 	if (window.location.href.indexOf("index.html") != -1) {
-		console.log("URL tem 'index.html': exibe bloco exclusivo da frontpage");
-        document.getElementById("frontpage").style.display="block"
+		console.log("URL tem 'index.html': exibe blocos da frontpage");
+        document.getElementById("frontpage").style.display="block";
+        document.getElementById("banner-front2").style.display="block";
     }
 	if (window.location.href.indexOf("#") != -1) {
-		console.log("URL tem '#': esconde bloco exclusivo da frontpage");
-        document.getElementById("frontpage").style.display="none"
+		console.log("URL tem '#': esconde blocos da frontpage");
+        document.getElementById("frontpage").style.display="none";
+		document.getElementById("banner-front2").style.display="none";
     }
 	if (window.location.href.indexOf("#!/c/") != -1) {
-		console.log("URL tem '#!/c/': exibe bloco exclusivo da frontpage");
-        document.getElementById("frontpage").style.display="block"
+		console.log("URL tem '#!/c/': exibe blocos da frontpage");
+        document.getElementById("frontpage").style.display="block";
+		document.getElementById("banner-front2").style.display="block";
     }
 	if (window.location.href.indexOf("#slideshow") != -1) {
-		console.log("URL tem '#slideshow': exibe bloco exclusivo da frontpage");
-        document.getElementById("frontpage").style.display="block"
+		console.log("URL tem '#slideshow': exibe blocos da frontpage");
+        document.getElementById("frontpage").style.display="block";
+		document.getElementById("banner-front2").style.display="block";
     }
 	if (localStorage.getItem("ClickedToPay") == 'y') {
 	Ecwid.Cart.clear();
@@ -255,6 +259,13 @@ Ecwid.OnPageLoaded.add(function (page) {
         SaveOrderId();
 		RegistryClickToPay();
     }
+	var DivBanner = document.querySelector("div.ec-page-title__featured-products");
+	console.log(DivBanner);
+
+	DivBanner.addEventListener("click", function (eee) {
+			console.log("DivBanner clicado");
+			location.href = "#!/Funko-Pop/c/139296158";
+	});
 });
 
 function SaveOrderId() {
@@ -284,6 +295,7 @@ function RegistryClickToPay() {
 	}
 	}
 }
+
 </script>
 </body>
 </html>
