@@ -226,7 +226,8 @@ z-index:2 !important;
 }
 
 #banner-front2 img{
-	height:275px;
+	height:auto;
+	max-height:275px;
 	width:49.5%;
 	display:inline-block;
 	border-radius:12px;
@@ -548,7 +549,8 @@ a.details-gallery__thumb-img{margin:0 auto !important}
 
 /* Slideshow Phablet */
 #slideshow{height:235px}
-#slideshow input{margin-top:220px}
+#slideshow input{margin-top:220px;margin-right:20px;transform:scale(2.5)}
+#slideshow input:first-of-type {margin-left:46%}
 #descricoes-1200px div p {font-size: 0.9em}
 
 /* Produtos Phablet */
