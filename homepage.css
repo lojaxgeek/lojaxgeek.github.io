@@ -391,9 +391,10 @@ table.ecwid-Checkout-blockTitle tbody tr td div .gwt-HTML{margin:0 0 5px 1px !im
 td.ecwid-Invoice-footer-placeOrder-text {text-align:left !important}
 ul.ec-page-links__wrapper li:first-child{display:none !important}
 
-div.ec-cart-step--delivery div.ec-cart-step__wrap div.ec-cart-step__section p{display:none !important}
-div.ec-cart-step--delivery div.ec-cart-step__wrap div.ec-cart-step__section:first-of-type::before{
-	content:"Selecione abaixo o método de envio, para estimar o prazo de entrega após a postagem. A postagem dos produtos é feita em até 24h após a confirmação do pagamento." !important;
+div.ec-cart-step--delivery .ec-cart-step__wrap .ec-cart-step__section p{display:none !important}
+
+div.ec-cart-step--delivery .ec-cart-step__wrap .ec-cart-step__section:first-of-type::before{
+	content:"Selecione o método de envio para estimar o prazo de entrega após a postagem dos produtos. A postagem é feita em até 24h após a confirmação do pagamento." !important;
 	display:block !important;
 	width:100% !important;
 	font-weight:normal !important;
@@ -401,7 +402,14 @@ div.ec-cart-step--delivery div.ec-cart-step__wrap div.ec-cart-step__section:firs
     margin-bottom:10px !important;
 }
 
+div.ec-cart-step--delivery .ec-cart-step__wrap .ec-text-muted .ec-cart-step__section:first-of-type::before{display:none !important}
+div.ec-cart-step--delivery .ec-cart-step__icon--done + .ec-cart-step__wrap .ec-cart-step__section:first-of-type::before{display:none !important}
+
 div.ec-confirmation{margin-bottom:50px}
+div.details-product-purchase__checkout-controls{z-index:1 !important}
+div.details-product-purchase__add-more{z-index:1 !important}
+div.ec-store__cart-page .ec-breadcrumbs{display:none !important}
+div.ec-store__checkout-page .ec-breadcrumbs{display:none !important}
 
 /* Tablet */
 @media (max-width:1200px) {
