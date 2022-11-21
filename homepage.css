@@ -5,7 +5,7 @@
 body{background:url(img/bg.png) center top/1200px 100% no-repeat;min-width:410px;max-width:100% !important}
 #container{display:table;height:100vh;width:100%}
 #conteudo{display:table;height:100%;width:100%;table-layout:fixed;overflow:hidden}
-#header{position:fixed;width:100%;height:105px;z-index:4;background:linear-gradient(to right,#000058,brown);background:#000058}
+header{position:fixed;width:100%;height:105px;z-index:4;background:linear-gradient(to right,#000058,brown);background:#000058}
 #SearchWidget-1{margin:12px 10px 0 0 !important}
 #categorias{max-height:40px !important}
 #CategoriesV2-1{background:none !important;height:34px !important}
@@ -14,12 +14,12 @@ body{background:url(img/bg.png) center top/1200px 100% no-repeat;min-width:410px
 
 .ecwid-productBrowser{padding:0 20px !important;background:none !important}
 #ProductBrowser-1{min-height:350px !important}
-#rodape{display:table-row;height:300px}
+#rodape{display:table-row;height:280px}
 #ecwid_product_browser_scroller{position:absolute !important;margin-top:0px !important}
 #mobile-button-show,#mobile-button-hide{display:none}
 
 /* Largura mínima */
-#container,#header,.rodape-linha1,.rodape-linha2{min-width:410px}
+#container,header,.rodape-linha1,.rodape-linha2{min-width:410px}
 
 /* Cabeçalho */
 .cabecalho {height:105px;width:100%;max-width:1200px;margin:0 auto;padding-right:5px;}
@@ -38,7 +38,7 @@ body{background:url(img/bg.png) center top/1200px 100% no-repeat;min-width:410px
 .icones-produtos,.icones-conta{margin:0}
 .icones-link{color:white}
 .icones-pedidos{background:url(img/pedidos2.png) no-repeat center top;background-size:auto 100%}
-.icones-conta{background:url(img/conta2.png) no-repeat center top;background-size:auto 100%}
+.icones-conta{background:url(img/favoritos.png) no-repeat center top;background-size:auto 100%}
 .icones-top{margin-top:14px}
 .divisorv{height:65px;margin:20px 0 20px 0;border-left:1px #333333 solid;float:right}
 .compras{max-height:105px;width:12%;max-width:150px;overflow:hidden;float:right;padding:5px 25px 5px 5px}
@@ -93,7 +93,7 @@ z-index:2 !important;
 	border-radius:50%;
 	background:#fff;
 	box-shadow:0 0 0 1px #505050;
-	transform:scale(1.75);
+	transform:scale(1.5);
 	cursor:pointer;
 }
 
@@ -226,8 +226,7 @@ z-index:2 !important;
 }
 
 #banner-front2 img{
-	height:auto;
-	max-height:275px;
+	height:275px;
 	width:49.5%;
 	display:inline-block;
 	border-radius:12px;
@@ -281,7 +280,7 @@ margin-top:105px;
 /* Rodapé */
 .rodape-z-index{position:absolute;width:100%;z-index:1}
 .rodape-linha1{width:100%;height:150px;background:linear-gradient(to top,brown,#b56262);background:linear-gradient(to left,#000058,brown);background:linear-gradient(to right,#000058,brown);background:#ff5216;overflow:hidden}
-.rodape-linha2{width:100%;height:150px;background:brown;background:linear-gradient(to right,#000058,brown);background:#000058;overflow:hidden}
+.rodape-linha2{width:100%;height:130px;background:brown;background:linear-gradient(to right,#000058,brown);background:#000058;overflow:hidden}
 .rodape-center{max-width:1200px;margin:0 auto}
 .pagamentos{width:60%;padding-left:15px}
 .certificacoes{width:40%;padding-left:40px}
@@ -298,7 +297,7 @@ margin-top:105px;
 .cert4-rating{background-position:1px 1px;height:44px;width:190px}
 .cert5-pci{background-position:1px -44px;height:44px;width:159px}
 
-.rodape-bloco{width:33.33%;padding-top:14px;padding-bottom:10px;text-align:center;height:150px;color:white}
+.rodape-bloco{width:33.33%;padding-top:16px;padding-bottom:8px;text-align:center;height:150px;color:white}
 .rodape-bloco p{font-weight:bold;padding-bottom:6px;height:25%}
 .rodape-bloco ul{height:75%}
 .rodape-bloco ul li{list-style-type:none;height:25%}
@@ -392,10 +391,9 @@ table.ecwid-Checkout-blockTitle tbody tr td div .gwt-HTML{margin:0 0 5px 1px !im
 td.ecwid-Invoice-footer-placeOrder-text {text-align:left !important}
 ul.ec-page-links__wrapper li:first-child{display:none !important}
 
-div.ec-cart-step--delivery .ec-cart-step__wrap .ec-cart-step__section p{display:none !important}
-
-div.ec-cart-step--delivery .ec-cart-step__wrap .ec-cart-step__section:first-of-type::before{
-	content:"Selecione o método de envio para estimar o prazo de entrega após a postagem dos produtos. A postagem é feita em até 24h após a confirmação do pagamento." !important;
+div.ec-cart-step--delivery div.ec-cart-step__wrap div.ec-cart-step__section p{display:none !important}
+div.ec-cart-step--delivery div.ec-cart-step__wrap div.ec-cart-step__section:first-of-type::before{
+	content:"Selecione abaixo o método de envio, para estimar o prazo de entrega após a postagem. A postagem dos produtos é feita em até 24h após a confirmação do pagamento." !important;
 	display:block !important;
 	width:100% !important;
 	font-weight:normal !important;
@@ -403,19 +401,12 @@ div.ec-cart-step--delivery .ec-cart-step__wrap .ec-cart-step__section:first-of-t
     margin-bottom:10px !important;
 }
 
-div.ec-cart-step--delivery .ec-cart-step__wrap .ec-text-muted .ec-cart-step__section:first-of-type::before{display:none !important}
-div.ec-cart-step--delivery .ec-cart-step__icon--done + .ec-cart-step__wrap .ec-cart-step__section:first-of-type::before{display:none !important}
-
 div.ec-confirmation{margin-bottom:50px}
-div.details-product-purchase__checkout-controls{z-index:1 !important}
-div.details-product-purchase__add-more{z-index:1 !important}
-div.ec-store__cart-page .ec-breadcrumbs{display:none !important}
-div.ec-store__checkout-page .ec-breadcrumbs{display:none !important}
 
 /* Tablet */
 @media (max-width:1200px) {
 body{background:white}
-#header{height:70px;border:none}
+header{height:70px;border:none}
 #SearchWidget-1{margin:10px 10px 0 2px !important}
 #CategoriesV2-1{padding:0 !important}
 #rodape{height:460px}
@@ -549,8 +540,7 @@ a.details-gallery__thumb-img{margin:0 auto !important}
 
 /* Slideshow Phablet */
 #slideshow{height:235px}
-#slideshow input{margin-top:220px;margin-right:12px;transform:scale(2.25)}
-#slideshow input:first-of-type {margin-left:46%}
+#slideshow input{margin-top:220px}
 #descricoes-1200px div p {font-size: 0.9em}
 
 /* Produtos Phablet */
