@@ -1,7 +1,3 @@
-<!--
-Desenvolvido por Guilherme Zanoni
-guilhermezanoni.br@gmail.com
--->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -188,7 +184,7 @@ Ecwid.OnPageLoaded.add(function (page) {
 		RegistryClickToPay();
     }
 	if (window.location.href.indexOf("index.html") != -1) {
-		const DivBannerTimeout = setTimeout(DivBannerClickable, 2000);
+		const DivBannerTimeout = setTimeout(DivBannerClickable, 1000);
     }
 });
 
@@ -198,17 +194,21 @@ function SaveOrderId() {
 		localStorage.setItem("LastSavedOrderId", cart.orderId);
 		console.log("LastSavedOrderId é: " + localStorage.getItem("LastSavedOrderId"));
 	});
-}
+};
 
 /* Define elemento DivBanner para carregar URL quando clicado */
 function DivBannerClickable() {
-	var DivBanner = document.querySelector("div.ec-page-title.ec-page-title__featured-products");
-    console.log(DivBanner);
-	DivBanner.onclick = DivBannerURL
+	var PseudoDiv = document.createElement("div");
+	var DivBanner = document.querySelector("#featured-products-anchor");
+	console.log(DivBanner);
+	
+	DivBanner.appendChild(PseudoDiv);
+	console.log("DivBanner apensado");
+	DivBanner.onclick = DivBannerURL;
 	
 	function DivBannerURL() {
 		location.href = "#!/Funko-Pop/c/139296158";
-	}
+	};
 };
 
 /* Identifica o botão de pagamento, registra o clique do usuário e exibe no console */
@@ -229,7 +229,7 @@ function RegistryClickToPay() {
 		});
 	}
 	}
-}
+};
 
 </script>
 </body>
