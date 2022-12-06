@@ -248,14 +248,13 @@ z-index:2 !important;
 	margin-bottom:10px;
 }
 
-#featured-products-anchor div{
+#featured-products-anchor::after{
 	display:block;
 	height:auto;
 	width:100%;
 	max-width:1200px;
 	content:url(img/banner-front1.svg);
 	margin:10px 0 50px 0 !important;
-	cursor:pointer;
 }
 
 #featured-products-anchor::before{
@@ -266,7 +265,6 @@ z-index:2 !important;
     display:block;
     text-align:center;
     width:100%;
-	margin-bottom:5px;
 }
 
 /* Produtos */

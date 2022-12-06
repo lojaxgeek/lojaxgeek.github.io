@@ -158,7 +158,6 @@ Ecwid.OnPageLoaded.add(function (page) {
 		console.log("URL tem 'index.html': exibe blocos da frontpage");
         document.getElementById("frontpage").style.display="block";
         document.getElementById("banner-front2").style.display="block";
-		const DivBannerTimeout = setTimeout(DivBannerClickable, 2000);
     }
 	if (window.location.href.indexOf("#") != -1) {
 		console.log("URL tem '#': esconde blocos da frontpage");
@@ -192,21 +191,6 @@ function SaveOrderId() {
 		localStorage.setItem("LastSavedOrderId", cart.orderId);
 		console.log("LastSavedOrderId é: " + localStorage.getItem("LastSavedOrderId"));
 	});
-};
-
-/* Define elemento DivBanner para carregar URL quando clicado */
-function DivBannerClickable() {
-	var PseudoDiv = document.createElement("div");
-	var DivBanner = document.querySelector("#featured-products-anchor");
-	console.log(DivBanner);
-	
-	DivBanner.appendChild(PseudoDiv);
-	console.log("DivBanner apensado");
-	DivBanner.onclick = DivBannerURL;
-	
-	function DivBannerURL() {
-		location.href = "#!/Funko-Pop/c/139296158";
-	};
 };
 
 /* Identifica o botão de pagamento, registra o clique do usuário e exibe no console */
