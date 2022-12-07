@@ -226,7 +226,6 @@ z-index:2 !important;
 }
 
 #banner-front2 img{
-	height:275px;
 	width:49.5%;
 	display:inline-block;
 	border-radius:12px;
@@ -404,7 +403,7 @@ body{background:white}
 header{height:70px;border:none}
 #SearchWidget-1{margin:10px 10px 0 2px !important}
 #CategoriesV2-1{padding:0 !important}
-#rodape{height:460px}
+#rodape{height:440px}
 .horizontal-desktop{display:none}
 .produtos{margin-top:70px}
 
