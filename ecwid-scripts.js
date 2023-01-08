@@ -14,16 +14,13 @@ Ecwid.OnPageLoaded.add(function (page) {
 		console.log("URL tem '#': esconde blocos da frontpage");
         document.getElementById("frontpage").style.display="none";
 		document.getElementById("banner-front2").style.display="none";
+		document.getElementById("whatswidget-pre-wrapper").style.display="none";
     }
 	if (window.location.href.indexOf("#!/c/") != -1) {
 		console.log("URL tem '#!/c/': exibe blocos da frontpage");
         document.getElementById("frontpage").style.display="block";
 		document.getElementById("banner-front2").style.display="block";
-    }
-	if (window.location.href.indexOf("#slideshow") != -1) {
-		console.log("URL tem '#slideshow': exibe blocos da frontpage");
-        document.getElementById("frontpage").style.display="block";
-		document.getElementById("banner-front2").style.display="block";
+		document.getElementById("whatswidget-pre-wrapper").style.display="block";
     }
 	if (localStorage.getItem("ClickedToPay") == 'y') {
 		Ecwid.Cart.clear();
