@@ -566,6 +566,8 @@ a.details-gallery__thumb-img{margin:0 auto !important}
 
 /* Ajuste da barra de pesquisa */
 @media (max-width:475px) {
+#slideshow{height:195px}
+#slideshow input{margin-top:182px}
 .conta{display:none}
 .details-gallery__images-container{min-height:auto !important}
 }
@@ -711,4 +713,24 @@ a[title="Início"]{display:none}
         transform:translate(0,-5px);
         transform:rotate(-2deg)
     }
+}
+
+@media (max-width:694px) {
+
+#whatswidget-conversation-message-outer {
+	display:none;
+}
+#whatswidget-widget-wrapper {
+    bottom: -28px!important;
+    right: 10px!important;
+}
+#whatswidget-button-wrapper {
+    bottom: 8px!important;
+    right: 10px!important;
+}
+#whatswidget-button{
+    width:36px!important;
+	height:36px!important;
+}
+
 }
