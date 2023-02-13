@@ -317,6 +317,8 @@ margin-top:105px;
 .breadcrumbs__link:hover{color:#1e7ec8 !important}
 .breadcrumbs__link{color:#333333 !important}
 .product-details__product-title{margin-bottom:5px !important}
+
+div.ec-store__category-page--0 button.form-control__button{background-color:#ff5722 !important;min-height:36px !important;}
 button.form-control__button:hover{background-color:#42999c !important;color:white !important}
 
 .details-gallery__images{max-height:550px !important}
@@ -328,7 +330,7 @@ img.details-gallery__picture{position:absolute !important}
 
 .ec-page-body div p{font-size:15px !important}
 .ec-page-buttons,.ec-print-page{display:none !important}
-.ecwid-minicart{max-height:95px !important;width:100% !important;border:0 !important;border-radius:4px !important;z-index:initial !important}
+.ecwid-minicart{max-height:95px !important;width:100% !important;border:0 !important;border-radius:4px !important;z-index:initial !important;background-color:#ffff90!important}
 .ecwid-minicart-caption,.ecwid-minicart-label,.ecwid-minicart-link{width:100% !important}
 .ecwid-minicart-caption{top:56px !important;color:white}
 .ecwid-minicart-clickArea{background:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50'%3E%3Cpath fill='%23439ca0' d='M37 13v27c0 3.31-2.69 6-6 6H9c-3.31 0-6-2.69-6-6V13h34m2-2H1v29c0 4.418 3.582 8 8 8h22c4.418 0 8-3.582 8-8V11z'/%3E%3Ccircle fill='%23439ca0' cx='12' cy='17' r='2'/%3E%3Ccircle fill='%23439ca0' cx='28' cy='17' r='2'/%3E%3Cpath fill='%23439ca0' d='M29 17h-2v-7c0-3.86-3.14-7-7-7s-7 3.14-7 7v7h-2v-7c0-4.962 4.037-9 9-9s9 4.038 9 9v7z'/%3E%3C/svg%3E") no-repeat !important;background-position:center !important;left:0 !important;width:100% !important;top:5px !important}
@@ -398,6 +400,9 @@ div.ec-cart-step--delivery div.ec-cart-step__wrap div.ec-cart-step__section:firs
 }
 
 div.ec-confirmation{margin-bottom:50px}
+div.ec-store__category-page--0 span.form-control__button-text {font-weight:600 !important; color:white !important}
+/*
+document.querySelector("#ProductBrowser-1 > div.ec-loader-wrapper.ec-size.ec-size--xxs.ec-size--xs.ec-size--s.ec-size--m.ec-size--l.ec-size--xl.ecwid-no-touch.ecwid-supports-cssanimations.ecwid-responsive > div > div > div:nth-child(2) > div > div:nth-child(2) > div > div.ec-store.ec-store__category-page.ec-store__category-page--0.ec-store--small-category-images.ec-store--small-product-images > div > div.ec-grid > div.grid__wrap > div > div > div.grid-product.grid-product--id-493496488 > div > div.grid-product__wrap-inner > div.grid-product__button.grid-product__buy-now > div > button")*/
 
 /* Tablet */
 @media (max-width:1200px) {
