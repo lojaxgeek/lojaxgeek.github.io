@@ -29,7 +29,7 @@ ecwidMessages = {
 "DnDLabel.drag_me":"Arraste e solte na sacola",
 "EmptyShoppingCartPanel.empty":"Sua sacola de compras está vazia",
 "LegalInfoPage.back_to_cart":"Voltar para a sacola",
-"Main.store_closed":"Estamos fazendo melhorias para melhor atendê-lo.<br><br>Em breve, novidades.",
+"Main.store_closed":"Estamos fazendo melhorias para melhor atendê-lo.<br>Em breve, novidades.",
 "Minicart.open_bag":"Ver itens",
 "Minicart.out_of_stock":"Ops! Este produto está momentaneamente fora de estoque e não pode ser selecionado.",
 "Minicart.shopping_bag":"Compras",
